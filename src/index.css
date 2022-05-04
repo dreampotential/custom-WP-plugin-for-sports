@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+#dw-widget-container ul {
+  padding: 8px 0 0;
+}
+/* #dw-widget-container td,
+#dw-widget-container span,
+#dw-widget-container th {
+  font-size: 1.4rem;
+  color: #3a3a3ae3;
+} */
+#dw-widget-container svg {
+  font-size: 20px;
+}
+#dw-widget-container {
+  min-width: 80%;
+}
+span.odds-table > span:not(:last-child) {
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  background: #f4f4f4;
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  box-shadow: inset 0 0 0 1px #d4d4d5;
+  padding: 5px 5px;
+  margin: 0 2px;
+  font-size: 10px;
+}
+span.odds-table > span:last-child {
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 5px;
+  margin: 0 2px;
+  font-size: 12px;
+}
+span.odds-table-header > span {
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 5px;
+  margin: 0 2px;
+  font-size: 12px;
+}
+
+.event-table th,
+.event-table td {
+  border: none;
+}
+.event-table .game-line {
+  width: 100px;
+  float: right;
+  text-align: center;
+  margin: 5px;
+  padding: 7px;
+}
+
+.event-table thead,
+.boder {
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+.event-table thead th {
+  font-weight: 600;
+}
+.hide {
+  visibility: hidden;
+}
+.event-table td.game-line {
+  text-align: center;
+  background: #f4f4f4;
+  border-radius: 3px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  box-shadow: inset 0 0 0 1px #d4d4d5;
+  margin: 5px;
+  padding: 7px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.event-table th.game-line {
+  padding: 7px;
+}
+.event-table td.game-line > div {
+  font-size: 100%;
+}
+.event-timer {
+  color: #69696c !important;
+  font-size: 11px !important;
+}
+.event-table td:first-child,
+.event-table th:first-child {
+  width: 60px;
+}
+div#dw-widget-container ul li {
+  padding-left: 16px;
+}
+.triangle-top {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+
+  position: absolute;
+  transform: rotate(-45deg);
+  right: -5px;
+  top: -10px;
+}
+.triangle-top.red {
+  border-left: 12px solid red;
+}
+.triangle-top.blue {
+  border-left: 12px solid rgb(6, 85, 48);
+}
+.triangle-bottom {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+
+  position: absolute;
+  transform: rotate(45deg);
+  right: -5px;
+  bottom: -10px;
+}
+.triangle-bottom.blue {
+  border-left: 12px solid rgb(6, 85, 48);
+}
+.triangle-bottom.red {
+  border-left: 12px solid red;
+}
+@media only screen and (max-width: 1000px) {
+  .event-table td.game-line {
+    padding: 0;
+  }
+  .event-table th.game-line {
+    padding: 7px 0;
+  }
+  .event-table th,
+  .event-table td {
+    width: auto;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .event-table td.game-line,
+  .event-table th.game-line {
+    width: 60px;
+    padding: 5px;
+  }
+  span.odds-table > span:last-child,
+  span.odds-table-header > span:last-child {
+    display: none;
+  }
+  .event-table .game-line {
+    padding: 0;
+  }
+  .event-table th,
+  .event-table td {
+    width: auto;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .event-table td:first-child,
+  .event-table th:first-child {
+    width: 40px;
+  }
+  #dw-widget-container td,
+  #dw-widget-container span,
+  #dw-widget-container th {
+    font-size: 13px;
+  }
+  #dw-widget-container .event-table th.game-line,
+  #dw-widget-container .event-table td.game-line {
+    font-size: 12px;
+  }
+  .event-table td.game-line {
+    height: 45px;
+  }
+  .event-table th:nth-child(3),
+  .event-table td:nth-child(3) {
+    width: 40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .event-table td.game-line > div {
+    font-size: 0.7rem;
+  }
+  .card_heading > div {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #dw-widget-container td,
+  #dw-widget-container span,
+  #dw-widget-container th {
+    font-size: 12px;
+    padding: 3px;
+  }
+  .event-table td:first-child,
+  .event-table th:first-child {
+    width: 30px;
+  }
+  #dw-widget-container .event-table th.game-line,
+  #dw-widget-container .event-table td.game-line {
+    font-size: 11px;
+    margin: 2px;
+    padding: 0;
+  }
+}
